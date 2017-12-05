@@ -15,13 +15,12 @@ module.exports = function (grunt) {
 				roundingPrecision: -1
 			},
 			target: {
-				files: [
-					{
-		            	expand:true,
-						src: "*.css",
-						dest: ''
-		            }
-				]
+				files: {
+					// if you want to concat mutliple scripts, do that here.
+					"scrollpoint.jquery.min.css": [
+						"scrollpoint.jquery.css"
+					]
+				}
 			}
 		},
 

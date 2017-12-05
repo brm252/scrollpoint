@@ -1,0 +1,81 @@
+/* scrollpoint styles */
+.scrollpoint.sp-triggered {
+    transition:.3s all linear;
+}
+
+/*Fade in and animate bottom to top*/
+.fadeUp {
+    opacity:0;
+    position:relative;
+    top:30px;
+}
+.fadeUp.sp-triggered {
+    opacity:1;
+    top:0;
+}
+
+/*Fade in and animate right to left*/
+/*     <----- (fadein)*/
+.fadeLeft {
+    opacity:0;
+    position:relative;
+    left:30px;
+}
+.fadeLeft.sp-triggered {
+    opacity:1;
+    left:0;
+}
+
+/*Fade in and animate left to right*/
+/*     -----> (fadein)*/
+.fadeRight {
+    opacity:0;
+    position:relative;
+    right:30px;
+}
+.fadeRight.sp-triggered {
+    opacity:1;
+    right:0;
+}
+
+/*Slide in from left side*/
+/*     ----->*/
+.slideRight {
+    position:relative;
+    right:100%;
+}
+.slideRight.sp-triggered {
+    right:0;
+}
+
+/*Slide in from right side*/
+/*     <-----*/
+.slideLeft {
+    position:relative;
+    left:100%;
+}
+.slideLeft.sp-triggered {
+    left:0;
+}
+
+/*Small slide in from right side*/
+/*     ----->*/
+.quickSlideRight {
+    position:relative;
+    right:50px;
+}
+.quickSlideRight.sp-triggered {
+    right:0;
+}
+
+/* Zoom in */
+.zoomIn {
+    opacity:0;
+    position: relative;
+    transform: scale(.5);
+}
+.zoomIn.sp-triggered {
+    opacity:1;
+    zoom: 1;
+    transform: scale(1);
+}
