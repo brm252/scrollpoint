@@ -1,0 +1,34 @@
+{
+  "name": "scrollpoint-js",
+  "version": "1.2.1",
+  "description": "ScrollPoint, a tool used to animate elements when scrolling. Available for jQuery.",
+  "keywords": [
+    "scroll",
+    "animation",
+    "ui",
+    "ux"
+  ],
+  "license": "GNU",
+  "contributors": [
+    {
+      "name": "Bradley Moore",
+      "url": "https://github.com/pfiller"
+    }
+  ],
+  "dependencies": {},
+  "files": [
+    "scrollpoint.jquery.js",
+    "scrollpoint.jquery.min.js"
+  ],
+  "main": "scrollpoint.jquery.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brm252/scrollpoint.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "1.0.0",
+    "grunt-contrib-uglify": "0.11.0"
+  }
+}
