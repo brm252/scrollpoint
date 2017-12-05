@@ -6,6 +6,7 @@
             animation: '',
             delay:0,
             loadAfter: false,
+            beforeTrigger: function(){},
             onTrigger: function(){}
         }, options);
         var element = element[0];
@@ -62,6 +63,7 @@
     }
 
     function animateit(element, opts){
+        opts.beforeTrigger();
         $(element).removeClass('sp-force-trigger');
         // add the class name sp-triggered
         element.className = element.className.replace('sp-pre-triggered', '');
