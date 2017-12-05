@@ -96,7 +96,10 @@
     }
 
     // this make sure any animations on screen already happen on load without having to wait for a scroll action
-    $(window).load(function(){        
+    $(document).ready(function(){
+        $(window).trigger('scroll');
+    });
+    $(window).load(function(){
         $(window).trigger('scroll');
     });
 })(jQuery);
